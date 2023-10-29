@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
-    <a href="{{ route('memos.index') }}">戻る</a>
+    <a href="{{ route("memos.index") }}">戻る</a>
     <h1>更新</h1>
-    <form action="{{ route('memos.update', $memo) }}" method="post">
+    <form action="{{ route("memos.update", $memo) }}" method="post">
         @csrf
         @method('PATCH')
         <p>
